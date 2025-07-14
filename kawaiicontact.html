@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me ✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #FFB6C1;
+      --primary-hover: #FF69B4;
+      --bg-color: #FFF0F5;
+      --text-color: #4D4D4D;
+      --container-bg: #FFFCF9;
+      --accent-color: #B0E0E6;
+      --shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.8;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: var(--container-bg);
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+
+    label {
+      font-weight: 600;
+      color: var(--primary-color);
+      font-size: 1em;
+      align-self: flex-start;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 12px 16px;
+      border: 2px solid var(--accent-color);
+      border-radius: 16px;
+      background-color: #fff;
+      font-size: 1em;
+      font-family: 'Quicksand', sans-serif;
+      color: var(--text-color);
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--primary-hover);
+      box-shadow: 0 0 8px var(--primary-hover);
+    }
+
+    .button-row {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .cute-button {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 12px 24px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .cute-button:hover {
+      background-color: var(--primary-hover);
+      transform: scale(1.05) rotate(-1deg);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Me 💌</h1>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Azatul 🐰" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" rows="5" placeholder="Write something sweet... ✨"></textarea>
+
+      <div class="button-row">
+        <button type="submit" class="cute-button">Send 💌</button>
+        <button type="reset" class="cute-button">Clear 🧼</button>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    Made with 💖 by Azatul · © 2025
+  </footer>
+</body>
+</html>

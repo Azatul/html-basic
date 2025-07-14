@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me & My Location 🌸</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #FFB6C1;
+      --primary-hover: #FF69B4;
+      --bg-color: #FFF0F5;
+      --text-color: #4D4D4D;
+      --container-bg: #FFFCF9;
+      --accent-color: #B0E0E6;
+      --shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.8;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--container-bg);
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .emoji-title::before {
+      content: '🌸 ';
+    }
+
+    .emoji-title::after {
+      content: ' ✨';
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .location-box {
+      background-color: #fefefe;
+      border: 2px dashed var(--accent-color);
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="emoji-title">About Me</h1>
+    <p>Hi! I'm <strong>Azatul</strong> 🐰 — a creative web developer who loves pastel colors, cats, and anything kawaii! I enjoy building adorable websites that bring joy and sparkle to the world. 💻🎀</p>
+  <footer>
+    With love from Sabah 🐾 · © 2025 Azatul
+  </footer>
+</body>
+</html>
