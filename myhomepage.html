@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Azatul's Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
@@ -12,20 +12,40 @@
     }
   </style>
 </head>
-<body class="bg-pink-50 text-gray-700 p-5">
-  <div class="max-w-2xl mx-auto bg-white/70 backdrop-blur-md p-8 rounded-3xl shadow-lg text-center">
-    <h1 class="text-4xl font-semibold text-pink-400 mb-6">Hi, I'm Azatul! ✨</h1>
-    <img src="images/student.jpg" alt="Azatul's photo" class="w-40 h-40 rounded-full object-cover mx-auto mb-6 shadow-md">
-    <p class="text-lg mb-4">I'm a pastel-loving, creative web developer based in Kota Kinabalu, Sabah 🌸 I love building cute, clean, and functional websites that make people smile!</p>
-    <p class="text-lg mb-6">Feel free to check out my work and get in touch below~</p>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="mycontact.html" class="bg-pink-300 hover:bg-pink-400 text-white px-5 py-2 rounded-full shadow transition">💌 Contact Me</a>
-      <a href="mylocation.html" class="bg-pink-300 hover:bg-pink-400 text-white px-5 py-2 rounded-full shadow transition">🌍 My Location</a>
-      <a href="myabout.html" class="bg-pink-300 hover:bg-pink-400 text-white px-5 py-2 rounded-full shadow transition">👀 About Me</a>
+<body class="relative bg-cover bg-center min-h-screen bg-no-repeat bg-fixed bg-[url('/images/bg3.jpg')]">
+
+  <!-- Optional animated background video -->
+  <!-- 
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+    <source src="https://cdn.coverr.co/videos/coverr-aesthetic-forest-path-3084/1080p.mp4" type="video/mp4" />
+  </video>
+  -->
+
+  <div class="max-w-2xl mx-auto mt-10 bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-xl text-center px-6 sm:px-10">
+    <h1 class="text-3xl sm:text-4xl font-semibold text-pink-400 mb-6">Hi, I'm Azatul! ✨</h1>
+    
+    <img src="images/student.jpg" alt="Azatul's photo" class="w-32 sm:w-40 h-32 sm:h-40 rounded-full object-cover mx-auto mb-6 shadow-md border-4 border-pink-200">
+    
+    <p class="text-base sm:text-lg mb-4">I'm a pastel-loving, creative web developer based in Kota Kinabalu, Sabah 🌸 I love building cute, clean, and functional websites that make people smile!</p>
+    
+    <p class="text-base sm:text-lg mb-6">Feel free to check out my work and get in touch below~</p>
+
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
+      <a href="mycontact.html" class="bg-pink-300 hover:bg-pink-400 text-white px-6 py-2 rounded-full shadow transition-all duration-300 text-sm sm:text-base">
+        💌 Contact Me
+      </a>
+      <a href="mylocation.html" class="bg-pink-300 hover:bg-pink-400 text-white px-6 py-2 rounded-full shadow transition-all duration-300 text-sm sm:text-base">
+        🌍 My Location
+      </a>
+      <a href="myabout.html" class="bg-pink-300 hover:bg-pink-400 text-white px-6 py-2 rounded-full shadow transition-all duration-300 text-sm sm:text-base">
+        👀 About Me
+      </a>
     </div>
   </div>
-  <footer class="text-center text-sm text-gray-400 mt-10">
+
+  <footer class="text-center text-xs sm:text-sm text-black-600 mt-10 px-4">
     Made with 🐾 in pastel land · © 2025 Azatul
   </footer>
+
 </body>
 </html>

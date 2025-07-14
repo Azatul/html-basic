@@ -12,7 +12,13 @@
     }
   </style>
 </head>
-<body class="bg-pink-50 text-gray-700 p-5">
+<body class="relative min-h-screen text-gray-700 font-[Quicksand]">
+    <!-- 🎥 Video Background -->
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+      <source src="https://cdn.coverr.co/videos/coverr-aesthetic-forest-path-3084/1080p.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
   <div class="max-w-3xl mx-auto bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-xl text-center">
     <h1 class="text-4xl font-bold text-pink-400 mb-4">About Me 🧁</h1>
     <p class="text-lg mb-6">Hello! I'm <span class="font-semibold">Azatul</span>, a passionate student based in <span class="text-pink-500">Kota Kinabalu</span>. I love creating projects that combine creativity with problem-solving. 🛠️💡</p>
@@ -36,8 +42,11 @@
     <ul class="text-left list-disc list-inside mb-4">
       <li>I love cats, hiking, book cafes, and libraries.</li>
     </ul>
-    <img src="images/library.jpg" alt="library" class="w-48 mx-auto mb-6 rounded-xl shadow-md">
-    <img src="images/nature.jpg" alt="library" class="w-48 mx-auto mb-6 rounded-xl shadow-md">
+    
+    <div class="flex justify-center gap-6 flex-wrap">
+        <img src="images/study.jpg" alt="Image 1" class="w-48 rounded-xl shadow-md" />
+        <img src="images/nature.jpg" alt="Image 2" class="w-48 rounded-xl shadow-md" />
+      </div>
     
     <ul class="text-left list-disc list-inside mb-6">
     </ul>
@@ -45,9 +54,18 @@
     <hr class="my-8 border-dashed border-pink-200">
 
     <h2 class="text-2xl font-semibold text-pink-400 mb-2">Favorite Quote 💭</h2>
-    <blockquote class="italic text-lg text-gray-600 mb-6">“The best way to predict the future is to invent it.” – Alan Kay</blockquote>
+    <blockquote class="italic text-lg text-black-600 mb-6">“The best way to predict the future is to invent it.” – Alan Kay</blockquote>
 
-    <a href="homepage.html" class="inline-block bg-pink-300 text-white px-6 py-2 rounded-full shadow hover:bg-pink-400 transition-all duration-300">← Back to Home</a>
+    <div class="text-center mt-6">
+        <a href="myhomepage.html" class="inline-block bg-pink-300 text-white px-6 py-2 rounded-full shadow hover:bg-pink-400 transition-all duration-300">
+          ← Back to Home
+        </a>
+      </div>      
   </div>
+
+  <footer class="text-center text-xs sm:text-sm text-black-600 mt-10 px-4">
+    Made with 🐾 in pastel land · © 2025 Azatul
+  </footer>
+  
 </body>
 </html>
